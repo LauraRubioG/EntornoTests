@@ -23,4 +23,26 @@ public class MiPrimerTest {
         // Assert
         assertFalse(esValido, "El nombre vacío se aceptó como válido");
     }
+
+    @Test
+    public void nombredelaclase(){
+        //aranque es decir, ponemos las variables
+        //accion
+        //tenemos que poner el assert
+    }
+
+    @Test
+    public void deberia_Aceptar_edad18(){
+      int edad = 18;
+      Boolean esvalido = edad >=16;
+      assertTrue(esvalido, "El sistema deberia aceptar la edad");
+    }
+
+    @Test
+    @DisplayName ("Edad Incorrecta")
+    public void deveria_Rechazar_Edad12{
+        int edad = 12;
+        Boolean edadValida = edad >=16;
+        assertFalse(esValido, "El sistema deberia rechazar la edad");
+    }
 }
